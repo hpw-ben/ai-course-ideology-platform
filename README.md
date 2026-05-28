@@ -2,7 +2,7 @@
 
 ## 前言
 
-本仓库主要基于react和Django，用于毕业设计。
+本仓库主要基于 Vue3 加 SpringBoot 和 MySQL，用于参加福建省大学生计算机设计大赛省赛。
 
 ## 一、本仓库使用方法
 
@@ -25,7 +25,7 @@ git config --global user.email "你的邮箱@example.com"
 
 ````Bash
 # 克隆远程仓库到本地
-git clone http://154.222.28.16:3000/Top_Gun/Group_Work
+git clone 仓库地址
 ````
 
 建议先通过命令行完成首次克隆，然后使用 VSCode 打开克隆到本地的文件夹来进行后续的开发和 Git 操作。本地推送前，请确保根目录下的 .gitignore 文件有屏蔽诸如 node_modules 文件夹，来防止将一些不必要的大文件推送至 Gitea 而浪费大量时间。
@@ -150,6 +150,7 @@ public class HelloWorld {
        }
 }
 ```
+
 ```
 
 ### 2、文档行文
@@ -209,7 +210,7 @@ public class HelloWorld {
 ````Bash
 scoop install python
 scoop install nodejs
-````
+```
 
 #### 安装 Scoop
 
@@ -224,30 +225,10 @@ irm get.scoop.sh -outfile 'install.ps1'
 .\install.ps1 -ScoopDir 'C:\Scoop'
 ````
 
-#### 使用 Scoop`<a id="scoop"></a>`
+#### 使用 Scoop `<a id="scoop"></a>`
 
 Scoop 的官方文档对于新手非常友好，推荐阅读 [官方文档](https://github.com/ScoopInstaller/Scoop) 或 [快速入门](https://github.com/ScoopInstaller/Scoop/wiki/Quick-Start) 。
 
 ### Git
 
 推荐阅读 [《Git 学习笔记》](https://ideepspace.gitbooks.io/git/content/) 重点关注里面的分支管理以及里面的 *第五部分* 。
-
-## 五、技术栈
-
-### 前端 (Next.js Ecosystem)
-
-* **框架**：`Next.js 14+ (App Router)` - 利用文件路由和 Layout 系统管理复杂页面。
-* **语言**：`TypeScript` - 强类型保障医疗数据安全。
-* **UI 组件库**：`Shadcn UI` + `Tailwind CSS` - 现代、简洁、专业风格。
-* **状态管理**：`Zustand` (全局状态) + `TanStack Query` (服务端数据同步)。
-* **可视化核心**：
-* **影像**：`cornerstone.js` (Core/Tools/WADO Loader)。
-* **交互**：自定义牙位图组件。
-* **表单**：`React Hook Form` + `Zod`。
-
-### 后端 (Django Ecosystem)
-
-* **框架**：`Django` + `Django REST Framework (DRF)`。
-* **数据库**：`PostgreSQL`。
-* **数据处理**：`Pandas` (Excel 导入/导出), `Zipfile` (影像包解压)。
-* **存储**：`MinIO`。
